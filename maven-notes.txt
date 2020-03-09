@@ -1,0 +1,38 @@
+Maven Installation
+-----------------
+
+1. Download Zip file from Apache Mirrors.
+
+2. set MAVEN_HOME in environment variables
+Ex:- C:\Softwares\apache-maven-3.5.4
+
+3. set JAVA_HOME
+Ex:- C:\Program Files\Java\jdk1.8.0_201 
+
+4. set the path for java and maven
+Ex:- C:\Program Files\Java\jdk1.8.0_201\bin;
+	 C:\Softwares\apache-maven-3.5.4\bin;
+	 
+Test Java Working or not
+open cmd type 
+	javac
+	java -version
+	
+Test Maven working or not
+open cmd type
+	mvn -version
+
+Maven Version 
+
+1.0.SNAPSHOT means future updates release
+1.0.FIXED (or) FINAL
+1.0.RELEASE
+
+Installing Third Party jar files into local reposotory
+
+mvn install:install-file 
+	-DgroupId=com.mahindra.app -DartifactId=mahindra-app
+	-Dversion=1.0.SNAPSHOT -Dpackage=jar -Dfile=D:\Softwares\mahindra.app.jar
+
+
+
