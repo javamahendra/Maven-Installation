@@ -30,6 +30,8 @@ Maven Version
 
 Installing Third Party jar files into local reposotory
 
+jar file name = mahindra-app.jar
+
 mvn install:install-file 
 	-DgroupId=com.mahindra.app -DartifactId=mahindra-app
 	-Dversion=1.0.SNAPSHOT -Dpackage=jar -Dfile=D:\Softwares\mahindra.app.jar
